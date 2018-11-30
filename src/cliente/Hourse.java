@@ -4,6 +4,11 @@ import java.awt.*;
 
 import javax.swing.ImageIcon;
 
+/**
+ * 
+ * @author alejandro
+ *modela los caballos de la carrera
+ */
 public class Hourse {
 	private String ruta="C:/Users/alejandro/eclipse-workspace/examen/img/hourse.gif";
 

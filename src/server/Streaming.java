@@ -12,7 +12,11 @@ import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.DataLine;
 import javax.sound.sampled.TargetDataLine;
-
+/**
+ * 
+ * @author alejandro
+ *	trasmite la voz del locutor a los clientes usando udp Streaming 
+ */
 public class Streaming {
 	private final byte audioBuffer[] = new byte[10000];
 	private TargetDataLine targetDataLine;

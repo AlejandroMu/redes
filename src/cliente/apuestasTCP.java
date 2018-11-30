@@ -3,7 +3,13 @@ package cliente;
 import java.io.*;
 import java.net.*;
 import javax.net.ssl.*;
-
+/**
+ * 
+ * @author alejandro
+ *
+ *	clase que se encarga de hacer la conexion con el servidor
+ *	envia y recibe las respuestas y las envia a la clase Cliente.
+ */
 
 public class apuestasTCP extends Thread{
 	public static final int port=1234;

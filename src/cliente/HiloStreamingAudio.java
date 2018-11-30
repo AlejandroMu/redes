@@ -4,7 +4,12 @@ import java.io.*;
 import java.net.*;
 
 import javax.sound.sampled.*;
-
+/**
+ * 
+ * @author alejandro
+ *	clase que se encaraga de recibir los datos de la narracion
+ *usando udp streaming
+ */
 public class HiloStreamingAudio {
 
 	AudioInputStream audioInputStream;

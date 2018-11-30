@@ -7,6 +7,13 @@ import java.util.Scanner;
 
 import javax.net.ssl.SSLServerSocketFactory;
 
+/**
+ * 
+ * @author alejandro
+ *
+ *         se encarga de recibir las peticiones de los usuarios, y almacenar los
+ *         estados de los caballos
+ */
 public class Servidor {
 	public static final int port = 1234;
 	private static final String LOCATIOKEY = "./img/key.jks";

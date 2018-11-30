@@ -16,6 +16,11 @@ import java.util.Hashtable;
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
 
+/**
+ * 
+ * @author alejandro Mostrar la carrera de caballos en el frame, actualizando
+ *         los datos de la carrera en la base de datos.
+ */
 public class Cliente extends JFrame implements ActionListener {
 	public static final String server = "";
 	public static final int port = 1234;
@@ -135,15 +140,15 @@ public class Cliente extends JFrame implements ActionListener {
 		repaint();
 		pack();
 		try {
-			Calendar cal=Calendar.getInstance();
-			String dia=cal.get(Calendar.DATE)+"/";
-			String mes=cal.get(Calendar.MONTH)+"/";
-			String an=""+cal.get(Calendar.YEAR);
-			String fecha=dia+mes+an+"-";
+			Calendar cal = Calendar.getInstance();
+			String dia = cal.get(Calendar.DATE) + "/";
+			String mes = cal.get(Calendar.MONTH) + "/";
+			String an = "" + cal.get(Calendar.YEAR);
+			String fecha = dia + mes + an + "-";
 			File clentes = new File(folder + "/datos.txt");
 			BufferedWriter esc = new BufferedWriter(new FileWriter(clentes, true));
 			esc.newLine();
-			esc.write(idcliente + ","+fecha+apuestaT+"-"+hourse+"-"+msm);
+			esc.write(idcliente + "," + fecha + apuestaT + "-" + hourse + "-" + msm);
 			esc.close();
 		} catch (Exception a) {
 
@@ -181,7 +186,7 @@ public class Cliente extends JFrame implements ActionListener {
 			loadHourses();
 			enable = false;
 			guardar();
-			
+
 		}
 	}
 }
