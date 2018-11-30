@@ -69,10 +69,13 @@ public class HTTP {
 				}
 				response+="</tr>";
 			}
-			response+="<p><button id =\"boton\" type=\"button\" onclick=\"	devolverse()\"><b>Login</b></button></p>"
+			response+="<p><a href=http://localhost>"
 					+ "</table>"
 					+ "</body>"
 					+ "</html>";
+			String script="";
+					
+			
 	}
 	public String getFile() {
 		return response;

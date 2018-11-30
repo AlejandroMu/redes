@@ -50,13 +50,30 @@
             <div id="formDiv">
         <p class="special" id="b"> Bienvenido </p>
                 <p><label id ="l" for:"in">Cedula del Apostador</label></p>
-          <p>  <input id="t" name="in"></p>
+          <p>  <input id="t" name="in" required></p>
         <button id ="boton" type="button" onclick="consultar()"><b>Login</b></button>
                 </div>
         </div>
         <script type="text/javascript">
             function consultar(){
-                var idcliente=document.getElementById("t").innerHTML;
+                console.log("funcione");
+                
+                var idcliente=document.getElementById("t").value;
+                console.log(idcliente);
+                var url ="http:localhost:"+2345;
+                var xhttp = new XMLHttpRequest();
+                
+                xhttp.open("POST",url,true);
+                xhttp.onreadystatechange=function(){
+                    if(xhttp.status===200 && xhttp.readyState===4){
+                        var response =xhttp.responseText;
+                        document.writeln(response);
+                       // window.location.replace("http://localhost:"+2345+response);
+                    }else if(xhttp.status===500&&xhttp.readyState===4){
+                        alert(xhttp.responseText);
+                    }
+                }
+                xhttp.send(idcliente);
                 
                 
             }
