@@ -14,7 +14,11 @@ import java.util.Hashtable;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpServer;
-
+/**
+ * 
+ * @author alejandro
+ *
+ */
 public class ServidorHttp implements HttpHandler{
 	public static final String folder = "C:/Users/alejandro/eclipse-workspace/examen/docs";
 
@@ -91,7 +95,13 @@ public class ServidorHttp implements HttpHandler{
 
 			out.write(respuesta.getBytes());
 			out.close();
+		}else {
+			e.sendResponseHeaders(200, "n".getBytes().length);
+
+			out.write("n".getBytes());
+			out.close();
 		}
+		
 		
 
 	}
