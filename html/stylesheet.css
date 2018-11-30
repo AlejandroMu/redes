@@ -1,0 +1,18 @@
+body{
+    background-color: red;
+}
+
+p{
+    color:red;
+}
+
+#container{
+    
+    width: 100%;
+    text-align: center;
+    align-content: center;
+}
+
+#formDiv{
+    color: red;
+}

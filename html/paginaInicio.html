@@ -1,0 +1,65 @@
+<html>    
+    <head>
+        <title> Sistema de Apuesta </title>
+        
+        <style>
+           
+            body{
+                background: url("https://upload.wikimedia.org/wikipedia/commons/0/00/Hip%C3%B3dromo_de_la_Zarzuela.jpg");
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            #container{
+                height:100%;
+                width: 100%;
+                text-align: center;
+                align-content: center;
+                
+            }
+            #formDiv{
+                padding-top: 10%;
+            }
+            .special{
+                color:white;
+                font-size: 500%;
+            }
+            input{
+                border-radius: 40px;
+                width: 20%;
+                height: 5%;
+            }
+            button{
+                border-radius: 40px;
+                width: 5%;
+                height: 5%;
+            }
+            label{
+                color: black;
+                font-size: 30px;
+                border-radius: 40px;
+                width: 20%;
+                height: 5%;
+            }
+           
+            
+            
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="formDiv">
+        <p class="special" id="b"> Bienvenido </p>
+                <p><label id ="l" for:"in">Cedula del Apostador</label></p>
+          <p>  <input id="t" name="in"></p>
+        <button id ="boton" type="button" onclick="consultar()"><b>Login</b></button>
+                </div>
+        </div>
+        <script type="text/javascript">
+            function consultar(){
+                var idcliente=document.getElementById("t").innerHTML;
+                
+                
+            }
+        </script>
+    </body>
+</html>
